@@ -1,0 +1,6 @@
+#notes
+	- @notes.each do |note|
+		.note
+			%p.title= link_to note.title, note
+
+= link_to "Add a Note", new_note_path
