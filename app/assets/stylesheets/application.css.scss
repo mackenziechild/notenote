@@ -3,37 +3,5 @@
  */
 
 @import 'normalize';
-
-$dark_gray: #2B2E2E;
-$light_gray: #C0C1C1;
-$green: #33CD99;
-
-@mixin bold_font {
-	font-family: "brandon-grotesque","Helvetica Neue", Helvetica, sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-body {
-	padding-top: 7.5rem;
-}
-
-header {
-	background: $dark_gray;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding: 1.75rem 0;
-	border-bottom: 10px solid $green;
-	.header_inner {
-		width: 90%;
-		margin: 0 auto;
-		#logo {
-			display: inline-block;
-			width: 15%;
-		}
-		nav {
-			float: right;
-		}
-	}
-}
+@import "global.css.scss";
+@import "welcome.css.scss";

@@ -1,0 +1,97 @@
+button {
+	border: none;
+	outline: none;
+	background: $green;
+	padding: 1rem 3.5rem;
+	border-radius: 2rem;
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+#banner {
+	background-image: url(image_path("welcome_banner_image.jpg"));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 500px;
+	display: table;
+	.banner_content {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1 {
+			@include bold_font;
+			color: white;
+			font-size: 3.5rem;
+			margin: 0;
+		}
+		p {
+			font-size: 1.5rem;
+			margin: 0 0 2.5rem 0;
+			color: rgba(250, 250, 250, 0.5);
+		}
+	}
+}
+
+#testimonial {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #afb0b0;
+	padding: 3.5rem 0;
+	.quote {
+		margin: 0 0 .5rem 0;
+	}
+	.name {
+		@include bold_font;
+		color: $dark_gray;
+		margin: 0;
+		font-size: .85rem;
+	}
+}
+
+#callouts {
+	background-image: url(image_path("callout_background.jpg"));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 400px;
+	display: table;
+	.callout_inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.callout {
+		text-align: center;
+		width: 33.3333%;
+		padding: 1.5rem 2.5%;
+		float: left;
+		h2 {
+			@include bold_font;
+			color: white;
+			margin-bottom: 0;
+		}
+		p {
+			color: rgba(250, 250, 250, 0.4);
+		}
+	}
+}
+
+#bottom_cta {
+	text-align: center;
+	padding: 7.5rem 0;
+	h2 {
+		@include bold_font;
+		color: $dark_gray;
+		font-size: 3rem;
+		margin: 0;
+	}
+	p {
+			font-size: 1.25rem;
+			margin: 0 0 2.5rem 0;
+			color: #a7a8a8;
+		}
+}
