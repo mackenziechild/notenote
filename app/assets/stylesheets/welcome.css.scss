@@ -1,15 +1,3 @@
-button {
-	border: none;
-	outline: none;
-	background: $green;
-	padding: 1rem 3.5rem;
-	border-radius: 2rem;
-	a {
-		color: white;
-		text-decoration: none;
-	}
-}
-
 #banner {
 	background-image: url(image_path("welcome_banner_image.jpg"));
 	background-size: cover;
