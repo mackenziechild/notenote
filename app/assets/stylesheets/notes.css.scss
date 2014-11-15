@@ -45,6 +45,7 @@
 			color: $green;
 			border: 5px solid #E9E9E9;
 			@include bold_font;
+			background: transparent;
 		}
 	}
 }
