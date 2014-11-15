@@ -1,0 +1,20 @@
+!!!
+%html
+%head
+	%title NoteNote | Online Notebook Application
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags
+%body
+	%header
+		.header_inner
+			= link_to image_tag( 'logo.svg'), root_path, id: "logo"
+			%nav
+				- if user_signed_in?
+					= link_to "New Note", new_note_path
+				- else
+					= link_to "Log In", new_user_session_path
+	%p.notice= notice
+	%p.alert= alert
+
+	= yield
