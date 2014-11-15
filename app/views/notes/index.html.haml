@@ -1,6 +1,12 @@
-#notes
-	- @notes.each do |note|
-		.note
-			%p.title= link_to note.title, note
-
-= link_to "Add a Note", new_note_path
+.wrapper
+	#notes.clearfix
+		- unless @notes.blank?
+			- @notes.each do |note|
+				%a{ href: (url_for [note])}
+					.note
+						%p.title= note.title
+						%p.date= time_ago_in_words(note.created_at)
+		- else
+			%h2 Add a Note
+			%p It appears you haven't created any notes yet... Lets fix that. Why don't you go ahead and create a new note.
+			%button= link_to "New Note", new_note_path

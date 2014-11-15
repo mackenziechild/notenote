@@ -1,0 +1,26 @@
+#notes {
+	padding: 3.5rem 0;
+	.note {
+		background: $dark_gray;
+		width: 30%;
+		min-height: 150px;
+		margin: 1rem 1%;
+		padding: 1.5rem 2.5%;
+		float: left;
+		border-radius: .4rem;
+		position: relative;
+		.title {
+			@include bold_font;
+			color: white;
+			margin: 0;
+			letter-spacing: 1px;
+		}
+		.date {
+			position: absolute;
+			bottom: .25rem;
+			left: 8.5%;
+			color: $green;
+			font-size: .85rem;
+		}
+	}
+}
