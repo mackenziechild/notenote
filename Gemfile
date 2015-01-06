@@ -13,3 +13,7 @@ gem 'spring',        group: :development
 gem 'haml', '~> 4.0.5'
 gem 'simple_form', '~> 3.0.2'
 gem 'devise', '~> 3.4.1'
+
+group :production do
+	gem 'pg'
+end
